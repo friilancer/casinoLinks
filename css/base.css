@@ -1,0 +1,84 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+:root{
+    --main-font:'Times New Roman', Times, serif;
+    --sec-font: Verdana, Geneva, Tahoma, sans-serif;
+    --body-font:'Roboto', sans-serif; 
+    --primary-color: #b82601;
+    --main-font-color-dark:#252525;
+    --secondary-font-color:#c59d5f;
+    --body-font-color:#515151;
+}
+/* Utility classes */
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width:100%;
+}
+h1, h2{
+    font-weight: 300;
+    line-height: 1.2rem;
+}
+p{
+    margin:10px 0;
+}
+.flex-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+.flex-items > div{
+    padding:20px;
+}
+.btn{
+    display: inline-block;
+    padding:10px 15px;
+    color:#fff;
+    font-size:1.3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-right: -1px;
+    border-radius: 5px;
+}
+.btn:hover{
+    opacity:.7;
+}
+#navbar{
+    position: fixed;
+    z-index:100;
+    display: flex;
+    width:100%;
+    height:70px;
+    /* background:black; */
+    justify-content: space-between;
+    align-items: center;
+    padding:0 40px;
+    
+}
+#navbar a{
+    color:green;
+    font-size:19px;
+    font-weight:bold;
+}
+#navbar.sticky{
+    background-color: red;
+}
+
+
+
+.banner{
+    width:100%;
+    position: relative;
+    height:100vh;
+    background:url('../images/—Pngtree—casino\ illustration\ with\ roulette\ wheel\,_989890.png') no-repeat center center/cover;
+}

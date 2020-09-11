@@ -1,0 +1,541 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* background:#fefefe; */
+}
+:root{
+    --main-font:'Times New Roman', Times, serif;
+    --sec-font: Verdana, Geneva, Tahoma, sans-serif;
+    --body-font:'Roboto', sans-serif; 
+    --primary-color: #b82601;
+    --main-font-color-dark:#252525;
+    --secondary-font-color:#c59d5f;
+    --body-font-color:#515151;
+}
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style-type: none;
+}
+.primary-color{
+    color: var(--primary-color);
+}
+
+.cust-btn{
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: -1px;
+    color:white;
+    border-radius: 5px;
+    font-weight:bold;
+    transition:opacity .5s;
+    cursor:pointer;
+    padding:10px 15px;
+}
+.cust-btn:hover{
+    opacity: .7;
+}
+.cta-btn{
+    font-size:1rem;
+    background-color: #b82601;
+    
+    
+}
+.cta-btn:hover,
+.cta-btn:focus{
+    color:#fff;
+    opacity:.7;
+    text-decoration:none;
+
+}
+.btn-outline{
+    border:2px solid var(--primary-color);
+    color: var(--primary-color);
+    background:transparent;
+}
+.btn-outline:hover{
+    background:var(--primary-color);
+    color:#fff;
+    text-decoration: none;
+
+}
+nav.black{
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(37, 36, 36)), color-stop(1, #302f2f));
+    box-shadow: 0 2px 7px #010000;
+    color:#000;
+    transition:all .5s ease;
+    /* box-shadow: 1px 2px 3px .5px red; */
+
+}
+
+.navbar{
+    /* background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, #dfdfdf)); */
+    position:fixed;
+    height:70px;
+    width: 100%;
+    /* box-shadow: 0 2px 7px #010000; */
+    /* background-color: #ffffff !important; */
+    /* padding:1rem; */
+    /* background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%) !important; */
+    /* height:55px; */
+}
+.navbar-brand {
+    /* width:40px; */
+    color:var(--primary-color);
+    font-weight: bold;
+    font-family:cursive;
+    font-size:1.6rem;
+    /* padding: 0 30px; */
+    text-transform: uppercase;
+    /* text-shadow: 2px 1px 3px #062f4f; */
+}
+.navbar-nav li{
+    padding:0 10px;
+}
+
+.navbar-nav li a:hover{
+    /* color:white; */
+    color: var(--primary-color);
+    /* font-weight:bold; */
+}
+.navbar-toggler{
+    outline: none !important;
+}
+.fa-bars{
+    color:rgb(228, 46, 46);
+    font-size:30px;
+}
+
+/* header */
+
+.hero{
+    height: 100vh;
+    width:100%;
+    background:url('../images/—Pngtree—casino\ illustration\ with\ roulette\ wheel\,_989890.png')no-repeat center center / cover;
+    /* background-attachment: fixed; */
+    position: relative;
+}
+
+ nav a {
+    display: block;
+    color:#fff;
+    padding:10px 15px;
+    margin:0 5px;
+    text-decoration: none;
+    font-weight:500;
+    font-family: var(--body-font);
+}
+ nav a:hover{
+    border-bottom:var(--primary-color) solid 2px;
+}
+.hero::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    width:100%;
+    height:100%;
+    background:black;
+    /* opacity: .7; */
+    
+}
+.hero .content{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding-top: 0 20px; */
+
+}
+.hero *{
+    z-index: 10;
+}
+
+.content h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: -2px;
+    color : #FFf;
+    /* padding-bottom:10px; */
+    margin-bottom: 0;
+    /* margin-top:100px; */
+    
+
+}
+.content p{
+    font-size: 23px;
+    max-width:600px;
+    color: #fff;
+    text-transform: capitalize;
+    padding:0 10px;
+    margin:20px 0 30px;
+
+}
+
+.home-img img{
+    width:100%;
+}
+/* \about */
+#about-us{
+    background:#fff;
+    padding:50px;
+    height:100%;
+    width:100%;
+}
+.title{
+    font-size:25px;
+    font-family: var(--body-font);
+    font-weight: 300;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.sub-title{
+    font-size: 17px;
+    color: #131313;
+    margin-bottom: 10px;
+}
+.about-us{
+    padding-left:50px;
+}
+.about-us p{
+    line-height: 28px;
+    font-size:18px;
+    /* color:#444; */
+    /* font-size:16px; */
+}
+.speciality li{
+    padding-bottom: 8px;
+    /* line-height:24px; */
+    text-transform: capitalize;
+}
+.speciality i{
+    color: var(--primary-color);
+    margin-right: 10px;
+    font-size:18px;
+}
+/* services */
+
+#services{
+    padding:50px;
+    /* background:#aca8a8; */
+    text-align: center;
+}
+#services h4{
+    font-weight:300;
+    text-transform:capitalize;
+    font-family: var(--body-font);
+    margin-bottom:15px;
+
+}
+#services h4 a{
+    text-decoration: none;
+    color:#252525
+}
+#services h4 a:hover{
+    color:var(--primary-color)
+}
+#services i{
+    background-color: var(--primary-color);
+    color:#fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding:1rem;
+}
+.services p{
+    color:#444;
+    line-height: 28px;
+    padding:10px 15px;
+    font-size:18px;
+    /* text-align:left */
+    /* margin-bottom: 30px; */
+}
+.cardbody img{
+    width:100px;
+}
+/* benefits of working with us */
+#benefits{
+    padding:50px;
+    /* background-color: #f5f5f5 !important; */
+    
+}
+#benefits h2{
+    text-transform: uppercase;
+    font-size:25px;
+    font-weight:300;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.choose-us{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin-bottom: 20px;
+}
+.choose-img{
+    margin-right:30px;
+    
+}
+.choose-img img{
+    height: 60px;
+    width:60px;
+}
+
+.choose-us h4{
+    color:#131313;
+    font-family:var(--body-font);
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight:bold;
+    
+}
+.choose-us i{
+    background-color: var(--primary-color);
+    color:#fff;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    padding:1rem;
+
+}
+
+
+
+/* clients sction */
+#clients{
+    padding:50px;
+}
+.item img{
+    width:100%;
+    height: 100px;
+
+}
+.carousel-control-next-icon{
+    color:red;
+}
+
+/* Blog Page */
+.blog{
+    
+    background-color: #fff;
+    margin:10px 5px;
+    box-shadow: 2px 3px 5px gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.blog-content{
+    /* width:60%; */
+    padding:5px 10px;
+    
+}
+.blog-content h4 a{
+    display: block;
+    color:#131313;
+    font-weight:200;
+    text-transform: capitalize;
+    padding:10px 0;
+
+}
+.blog-content h4 a:hover{
+    color:var(--primary-color)
+}
+/* footer */
+.footer{
+    position: relative;
+    width:100%;
+    height:100%;
+    background:url('../images/inner-hero-header.jpg') no-repeat center center / cover;
+    padding:50px;
+    color:white;
+}
+.footer::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    opacity: .9;
+}
+.footer h5{
+    text-transform: uppercase;
+    font-family: var(--body-font);
+    /* color:var(--primary-color); */
+    font-size:1.1rem;
+    /* font-weight: bold; */
+}
+.footer i{
+    margin-right: 5px;
+    /* color:red; */
+}
+.footer-lists li{
+    
+    padding: 10px 0;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid red;
+    width:80%;
+    
+}
+.footer-lists li:last-child{
+    border-bottom:none;
+}
+.footer-lists li:first-child{
+    border-top:none;
+}
+.footer-lists li a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+.footer-lists li a:hover{
+    color:wheat;
+
+}
+.top-link{
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    widows: 2rem;
+    height:2rem;
+    /* display: grid; */
+    animation:bounce 2s ease-in-out infinite;
+    background:red;
+    padding:10px;
+    border-radius: 50px;
+    opacity:0;
+    color:white;
+    font-weight: bold;
+}
+.top-link.show-link{
+   opacity:1;
+   z-index:100;
+}
+
+/* link building page */
+
+.hero-inner{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background: url('../images/inner-hero-header.jpg') no-repeat center center /cover;
+}
+.hero-inner:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background:#000;
+    opacity:.7;
+}
+.hero-inner *{
+    z-index:200;
+}
+.inner-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width:100%;
+    text-align: center;
+}
+.inner-content h1{
+    font-size:40px;
+    color:#fff;
+    font-family: var(--primary-color);
+    line-height: .70rem;
+    text-transform: uppercase;
+    padding-bottom:1rem;
+    text-shadow: 2px 1px 3px #d80707;
+}
+.inner-content p{
+    max-width:600px;
+    font-size:22px;
+    font: weight 400;
+    color:#fff;
+    text-transform: capitalize;
+}
+.link-building{
+    margin:auto;
+    padding:20px 30px;
+}
+/* Service page */
+.service-main{
+    display: block;
+    background:#fff;
+    box-shadow: 2px 4px 10px gray;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.service-main img{
+    height:100px;
+    /* width:100%; */
+}
+.service-main h4{
+    padding:10px 0;
+}
+.service-main:hover{
+    transform:scale(1.1);
+}
+
+/* individual blog page */
+.content-blog{
+    margin-top:5rem;
+    margin-bottom: 2rem;
+    background:#fff;
+    box-shadow: 2px 4px 10px gray;
+    padding:10px;
+    color:#444;
+
+}
+.content-img img{
+    width:100%;
+    height:400px;
+
+}
+.content-blog h1{
+    font-family: var(--body-font);
+    padding:10px;
+    text-align: center;
+}
+.content-blog p{
+    padding:10px 15px;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+/* inventory page */
+.my-form{
+    background:blue;
+    padding:10px;
+    box-shadow:2px 3px 5px gray;
+}
+@keyframes bounce{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.5);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
