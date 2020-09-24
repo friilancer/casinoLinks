@@ -76,7 +76,7 @@ ul{
     position:fixed;
     height:70px;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
 
 }
 .navbar-brand {
@@ -308,7 +308,7 @@ nav.black{
 
 
 
-/* clients sction */    
+/* clients section */    
 .item img{
     width:100%;
     height: 100px;
@@ -358,29 +358,19 @@ nav.black{
     position: relative;
     width:100%;
     height:100%;
-    background:url('../images/inner-hero-header.jpg') no-repeat center center / cover;
+    background: linear-gradient(to right,rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 100%), url('../images/inner-hero-header.jpg') no-repeat center center / cover;
     color:white;
 }
-.footer::before{
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    background-color: black;
-    opacity: .9;
+
 }
 .footer h5{
     text-transform: uppercase;
     font-family: var(--body-font);
-    /* color:var(--primary-color); */
     font-size:1.1rem;
-    /* font-weight: bold; */
+
 }
 .footer i{
     margin-right: 5px;
-    /* color:red; */
 }
 .footer-lists li{
     
@@ -481,19 +471,29 @@ nav.black{
 .service-main{
     display: block;
     background:#fff;
-    box-shadow: 2px 4px 10px gray;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
     padding:10px;
     margin-bottom: 10px;
+    height: 380px;
 }
-.service-main img{
-    height:100px;
-    /* width:100%; */
+
+.serviceCardRows{
+    justify-content: space-evenly;
+}
+
+.serviceCardRows img{
+    height: 180px
+}
+.serviceCards{
+    width: 18rem;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);  
 }
 .service-main h4{
     padding:10px 0;
 }
-.service-main:hover{
-    transform:scale(1.1);
+.serviceCards:hover{
+    transform:scale(1.005);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);    
 }
 
 /* individual blog page */
