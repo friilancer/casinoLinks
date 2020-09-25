@@ -11,12 +11,9 @@ $(window).on("scroll", function(){
     }
 
     if(scrollHeight > 500){
-        // $('.top-link').addClass("show-link")
         toplink.classList.add("show-link");
     }
     else{
-        // $('.top-link').removeClass("show-link")
-
         toplink.classList.remove("show-link");
     }
 });

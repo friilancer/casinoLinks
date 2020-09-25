@@ -5,6 +5,11 @@
     box-sizing: border-box;
     
 }
+
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
 :root{
     --main-font:'Times New Roman', Times, serif;
     --sec-font: Verdana, Geneva, Tahoma, sans-serif;
@@ -75,8 +80,8 @@ ul{
 .navbar{
     position:fixed;
     height:70px;
-    width: 100%;
-    z-index: 10;
+    width: 100vw;
+    z-index: 108;
 
 }
 .navbar-brand {
@@ -483,6 +488,7 @@ nav.black{
 
 .serviceCardRows img{
     height: 180px
+    width: 18rem;
 }
 .serviceCards{
     width: 18rem;

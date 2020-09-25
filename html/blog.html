@@ -7,31 +7,25 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli|Nunito+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ebf30d11fb.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
     <link rel="stylesheet" href="../css/custom.css">
+    
 
-    <title>casino links</title>
+    <title>Blog - Casino Links</title>
 </head>
 
-<body>
-    <header class="hero-inner">
-        <nav class="navbar navbar-expand-md " id="nav-bar">
+<body data-spy="scroll" data-target="#myscrollspy">
+    <header class="hero genericHero" id="home">
+        <nav class="navbar fixed-top navbar-expand-md" id="nav-bar myscrollspy">
             <!-- Brand -->
-            <a class="navbar-brand" href="#">
-                <img src="../images/icons8-roulette-30.png" alt="">
-                CasiLinks
+            <a class="navbar-brand" href="#home">
+                <img src="../images/icons8-roulette-30.png" alt="" />
+                Casino Links
             </a>
 
             <!-- Toggler/collapsibe Button -->
@@ -49,18 +43,18 @@
                         <a class="nav-link" href="../html/services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="../html/casino.html#about-us">About</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="../html/blog.html">Blog</a>
                     </li>
-
                 </ul>
             </div>
-
         </nav>
-        
+        <div class="inner-content">
+            <h1>Our Blog</h1>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -151,9 +145,24 @@
                 </div>
                 
             </div>
+            <p class="text-center ">
+                Copyright &copy;  <span id="date"></span>
+            </p>
         </div>
         
     </footer>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/main.js"></script>
+
 
 </body>
 
