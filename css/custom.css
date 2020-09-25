@@ -7,9 +7,10 @@
 }
 
 body{
-    overflow-x: hidden;
     width: 100vw;
+    overflow-x: hidden;
 }
+
 :root{
     --main-font:'Times New Roman', Times, serif;
     --sec-font: Verdana, Geneva, Tahoma, sans-serif;
@@ -81,7 +82,7 @@ ul{
     position:fixed;
     height:70px;
     width: 100vw;
-    z-index: 108;
+    z-index: 100;
 
 }
 .navbar-brand {
@@ -177,10 +178,7 @@ nav.black{
 
 .content h1{
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    line-height: 1.1;
     text-transform: uppercase;
-    letter-spacing: 2px;
     text-align: center;
     color : #fff;
     margin-bottom: 0;
@@ -333,30 +331,18 @@ nav.black{
     padding: 5px 5px;
 }
 /* Blog Page */
-.blog{
-    
-    background-color: #fff;
-    margin:10px 5px;
-    box-shadow: 2px 3px 5px gray;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+.blogCard{
+    width: 18rem;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.blog-content{
-    /* width:60%; */
-    padding:5px 10px;
-    
+.blogCard:hover{
+    transform:scale(1.005);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);
 }
-.blog-content h4 a{
-    display: block;
-    color:#131313;
-    font-weight:200;
-    text-transform: capitalize;
-    padding:10px 0;
 
-}
-.blog-content h4 a:hover{
-    color:var(--primary-color)
+.blogRow{
+    justify-content: space-evenly;
 }
 /* footer */
 .footer{
@@ -398,8 +384,7 @@ nav.black{
     font-size: 1.1rem;
 }
 .footer-lists li a:hover{
-    color:wheat;
-
+    font-weight: bold;
 }
 .top-link{
     position:fixed;
@@ -422,43 +407,10 @@ nav.black{
 }
 
 /* link building page */
-
-.hero-inner{
-    position: relative;
-    height: 50vh;
-    width: 100%;
-    background: url('../images/inner-hero-header.jpg') no-repeat center center /cover;
-}
-.hero-inner:before{
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    background:#000;
-    opacity:.7;
-}
-.hero-inner *{
-    z-index:200;
-}
-.inner-content{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width:100%;
-    text-align: center;
-}
-.inner-content h1{
-    font-size:40px;
+.genericContent h1{
     color:#fff;
     font-family: var(--primary-color);
-    line-height: .70rem;
     text-transform: uppercase;
-    padding-bottom:1rem;
     text-shadow: 2px 1px 3px #d80707;
 }
 .inner-content p{
@@ -473,30 +425,20 @@ nav.black{
     padding:20px 30px;
 }
 /* Service page */
-.service-main{
-    display: block;
-    background:#fff;
-    box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
-    padding:10px;
-    margin-bottom: 10px;
-    height: 380px;
-}
 
 .serviceCardRows{
     justify-content: space-evenly;
+    overflow-x: hidden;
 }
 
 .serviceCardRows img{
-    height: 180px
-    width: 18rem;
+    height: 180px;
 }
 .serviceCards{
     width: 18rem;
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.2);  
 }
-.service-main h4{
-    padding:10px 0;
-}
+
 .serviceCards:hover{
     transform:scale(1.005);
     box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.5);    
@@ -504,10 +446,8 @@ nav.black{
 
 /* individual blog page */
 .content-blog{
-    margin-top:5rem;
+    margin-top:1rem;
     margin-bottom: 2rem;
-    background:#fff;
-    box-shadow: 2px 4px 10px gray;
     padding:10px;
     color:#444;
 
@@ -515,7 +455,6 @@ nav.black{
 .content-img img{
     width:100%;
     height:400px;
-
 }
 .content-blog h1{
     font-family: var(--body-font);
@@ -523,10 +462,7 @@ nav.black{
     text-align: center;
 }
 .content-blog p{
-    padding:10px 15px;
-    font-size: 16px;
-    line-height: 24px;
-
+    padding:10px 5px;
 }
 /* inventory page */
 .my-form{
