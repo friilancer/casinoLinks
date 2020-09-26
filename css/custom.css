@@ -16,6 +16,7 @@ body{
     --sec-font: Verdana, Geneva, Tahoma, sans-serif;
     --body-font:'Roboto', sans-serif; 
     --primary-color: #b82601;
+    --faint-primary-color: rgba(184, 38, 1, 0.7);
     --main-font-color-dark:#252525;
     --secondary-font-color:#c59d5f;
     --body-font-color:#515151;
@@ -463,12 +464,54 @@ nav.black{
 .content-blog p{
     padding:10px 5px;
 }
+
 /* inventory page */
-.my-form{
-    background:blue;
-    padding:10px;
-    box-shadow:2px 3px 5px gray;
+
+@media screen and (max-width: 400px){
+    .my-form{
+        width: 100%;
+        padding: 10px;    
+    }
 }
+
+.formRow{
+    margin: 10px 0 20px 0;
+    justify-content: space-evenly;
+}
+
+.my-form{
+    margin:auto;
+    box-shadow: 1px 1px 5px gray;
+    width:  400px;
+    padding: 20px 10px;
+}
+.formBtn{
+    text-align: center;
+    margin: auto;       
+}
+
+.inventoryCardRow{
+    justify-content: space-evenly;
+
+}
+.inventoryCard h3, .inventoryCard h6{
+    margin: 10px 0;
+}
+.inventoryCard{
+    width: 15rem;
+    margin: 10px 0;
+    box-shadow:0 -2px 1px var(--primary-color);
+}
+.inventoryCard:hover{
+    box-shadow:0 0px 3px var(--primary-color);   
+}
+.inventoryCard .fa-map-marker{
+    color: var(--faint-primary-color);
+}
+.inventoryCard .fa-check-circle{
+    color: var(--primary-color);
+}
+
 @keyframes bounce{
     0%{
         transform:scale(1);
